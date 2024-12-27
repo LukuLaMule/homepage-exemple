@@ -1,0 +1,107 @@
+
+- LUKU MUSCU 💪:
+    - Lundi:
+        description: |
+            **DOS**  
+            - Traction EMON (1min15) - 8x8  
+            - Rowing barre - 8x3  
+
+            **PEC**  
+            - Développé incliné à la Smith (30°) - 8x3  
+            - Push press convergeant à la machine - 8x3  
+
+            **EPAULES**  
+            - Élévations latérales haltères (assis) - 10x3  
+            - Élévation en Y - buste allongé sur le banc incliné - 10x3  
+      
+
+
+- Suis ces étapes pour accéder au service de streaming:
+    - Créer ton compte:
+        href: https://wizarr.luku.fr/i/BHUCMM
+        icon: wizarr
+        description: Enregistre toi pour pouvoir accéder au service de streaming, c'est gratuit.
+        container: wizarr
+
+    - Streaming:
+        href: https://jellyfin.luku.fr/web/index.html#!/home.html
+        icon: jellyfin
+        container: jellyfin
+        description: Créer ton compte, avec les mêmes identifiants que t'as utilisé pour t'inscrire sur la page d'avant.
+
+    - Rajoute ton film:
+        href: https://jellyseerr.luku.fr/
+        icon: jellyseerr
+        description: Tu peux demander de rajouter n'importe quel film ou série que tu veux regarder.
+        container: jellyseerr
+
+- Liens Utiles:
+    - Risitas Bot-Discord:
+        href: https://discord.com/oauth2/authorize?client_id=1257429003715874866&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fluku.fr&integration_type=0&scope=connections+bot+identify+guilds+guilds.channels.read+activities.read+messages.read+gdm.join
+        icon: https://risibank.fr/cache/medias/0/15/1543/154387/full.png
+        description: Issou, Risitas, Le Gange tout ça. 
+        container: risitas-risitas-1
+    - LaCantina Bot-Discord:
+        href: https://discord.com/oauth2/authorize?client_id=1290211569816309770&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fluku.fr&integration_type=0&scope=guilds.join+gdm.join+bot
+        icon: https://www.imt-formation-continue.fr/doc_client/Restaurant-banque.jpg
+        description: Bot discord pour avoir le menu de la cantine de l'IMT MINES ALES automatiquement, dès que ce dernier est mis à jour
+        container: bot-lacantina
+    - Cloud:
+        href: https://share.luku.fr
+        icon: https://static.wixstatic.com/media/d56e94_f9536572a9bd478a83b5bf5621739756~mv2.png/v1/fit/w_2500,h_1330,al_c/d56e94_f9536572a9bd478a83b5bf5621739756~mv2.png
+        description: Dépôt de fichiers
+        container: chibisafe-chibisafe-1
+- Perso :
+    - Calendar:
+        icon: google-calendar
+        widget:
+          type: calendar
+          firstDayInWeek: monday
+          view: monthly
+          maxEvents: 10
+          showTime: true
+          timezone: Africa/Abidjan
+          integrations:
+             - type: ical
+               url: https://crablendar.mtx.dev/
+               name: School
+               color: purple
+               showName: true
+    - Chess.com :
+        href: https://www.chess.com/member/lukulamule
+        icon: https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/phpkXK09k.png
+        widget:
+          type: customapi
+          url: https://www.chess.com/callback/user/popup/lukulamule
+          refreshInterval: 10000
+          method: GET
+          mappings:
+            - field: firstName
+              label: "👤 First Name"
+              format: text
+            - field: bestRating
+              label: "🏆 Best Rating"
+              format: number
+            - field: countryName
+              label: "🌍 Country"
+              format: text
+            - field: onlineStatus
+              label: "Online Status"
+              format: text
+              remap:
+                - value: "onlive"
+                  to: "🟢 Online"
+                - value: "offline"
+                  to: "🔴 Offline"
+                - any: true
+                  to: "⚪ Unknown"
+
+              
+   
+    - Monitoring :
+        href: https://status.luku.fr/status/global
+        icon: uptime-kuma
+        widget:
+          type: uptimekuma
+          url: http://uptime-kuma:3001
+          slug: global      

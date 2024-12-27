@@ -1,0 +1,17 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Mes liens:
+    - Github:
+        - abbr: GH
+          icon: github
+          href: https://github.com/LukuLaMule
+    - Twitch:
+        - abbr: TW
+          href: https://www.twitch.tv/luku_la_mule
+          icon: twitch
+    - Discord:
+        - abbr: DC
+          href: https://discord.com/users/304693398462267393
+          icon: discord

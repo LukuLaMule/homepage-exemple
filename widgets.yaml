@@ -1,0 +1,29 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service-widgets
+
+- resources:
+    label: System
+    cpu: true
+    memory: true
+    disk: /
+
+- resources:
+    label: Storage
+    disk: /mnt/storage
+
+- search:
+    provider: google
+    target: _blank
+
+- openmeteo:
+    label: Pau
+    latitude: 43.300000
+    longitude: -0.366667
+    timezone: Europe/Paris
+    units: metric
+    cache: 5
+    format:
+      maximumFractionDigits: 2
+
+
